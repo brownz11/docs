@@ -56,7 +56,7 @@ systemctl start rke2-server.service
           - another-kubernetes-domain.com
 After that, you need to run the installer and enable, then start, rke2:
 
-        curl -sfL https://get.rke2.io | sh -
+        curl -sfL https://get.rke2.io | INSTALL_RKE2_CHANNEL=v1.20 sh -
         systemctl enable rke2-server.service
         systemctl start rke2-server.service
 
